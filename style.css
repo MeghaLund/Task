@@ -1,0 +1,96 @@
+body{
+     margin:0;
+	 padding:0;
+	 font-size:sans-serif;
+	 width:100vh;
+	 height:100vh;
+    }
+	
+nav{
+	display:flex;
+	justify-content: space-between;
+	padding:10px 30px;
+	align-items:center;
+   } 
+   
+#brand{
+	   font-size:1.4rem;
+	   color:crimson;
+	   font-weight:bolder;
+	   cursor:pointer;
+      }
+	  
+nav ul{
+	   display:flex;
+	   list-style-type:none;
+	   gap:10px;
+      }
+nav ul li{
+	       cursor:pointer;
+		   font-weight:500;
+         }
+nav .cta{
+	    color:#fff;
+		border:none;
+		background-color:crimson;
+		padding:6px 15px;
+		border-radius:6px;
+		cursor:pointer;
+		font-weight:bold;
+        }
+.mobile-menu{ 
+             dispaly:none;
+            }
+			
+main{
+	 display:flex;
+	 align-items:center;
+	 justify-content:space-between;
+	 padding:30px;
+    }
+
+h1{
+	font-size:2rem;
+	font-weight:bold;
+  }
+ 
+section p{
+	     color:#616161;
+         }
+		 
+section button{
+	           background-color:transparent;
+			   border:none;
+			   color:blue;
+			   font-size:1.2rem;
+			   cursor:pointer;
+              }
+			  
+section button:hover{
+	               text-decoration:underline;
+                    }
+					
+button span{
+	      font-size:1rem;
+           }
+		   
+@media screen and(max-width: 700px){
+	                 nav ul, nav button{
+						           display:none;
+					                   }
+					.mobile-menu{
+						        dispaly:block;
+								cursor:pointer;
+					            }
+					main{
+						 flex-direction:column;
+					    }
+				   section{
+					     display:flex;
+						flex-direction:column;
+						align-items:center;
+				          }
+					img{
+						 width:250px;
+					   }
+                                   }
